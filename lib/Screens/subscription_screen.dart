@@ -41,7 +41,10 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Mixer", style: AppTextStyles.mixerHead(width)),
-                  Icon(Icons.close, size: width * 0.05, color: AppColors.gray400,),
+                  GestureDetector(
+                    onTap: () => Navigator.pop(context),
+                      child: Icon(Icons.close, size: width * 0.05, color: AppColors.gray400,)
+                  ),
                 ],
               ),
 

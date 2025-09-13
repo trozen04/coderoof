@@ -19,9 +19,13 @@ class AppColors {
   static const Color greyBorder = Color(0xFFEFEFEF);
   static const Color boxColor = Color(0xFFFFFCFD);
   static const Color mixerBorder = Color(0xFFB30142);
-  static const Color mixerDetails = Color(0xFFBEAB8CB);
+  static const Color mixerDetails = Color(0xFFEAB8CB);
   static const Color mixerVipDetails = Color(0xFFFFE5BE);
   static const Color mixerVipDetailsBG = Color(0xFFFDFAF6);
   static const Color included = Color(0xFF505254);
+  static const Color filtersBG = Color(0xFFfff6fe);
+  static const Color filtersOptionsBG = Color(0xFFF8F8F8);
+  static const Color navBarBG = Color(0xFFf3f3f4);
+  static const Color navBarShadow = Color(0xFFf5f5f6);
 
 }

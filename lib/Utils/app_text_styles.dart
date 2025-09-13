@@ -37,21 +37,21 @@ class AppTextStyles {
 
   static TextStyle normal(double width, {Color color = AppColors.gray600}) =>
       TextStyle(
-        fontSize: _fixedFontSize(width * 0.04),
+        fontSize: _fixedFontSize(width * 0.04), //16
         fontWeight: FontWeight.w500,
         fontFamily: ManropeMedium,
         color: color,
       );
   static TextStyle planDetails(double width, {Color color = AppColors.gray700}) =>
       TextStyle(
-        fontSize: _fixedFontSize(width * 0.035),
+        fontSize: _fixedFontSize(width * 0.035),//14
         fontWeight: FontWeight.w500,
         fontFamily: ManropeMedium,
         color: color,
       );
   static TextStyle includedText(double width) =>
       TextStyle(
-        fontSize: _fixedFontSize(width * 0.03),
+        fontSize: _fixedFontSize(width * 0.03), //12
         fontWeight: FontWeight.w600,
         fontFamily: ManropeMedium,
         color: AppColors.included,
@@ -69,11 +69,24 @@ class AppTextStyles {
     fontFamily: ManropeMedium,
     color: AppColors.white,
   );
+  static TextStyle filterText(double width, {Color color = AppColors.gray600}) => TextStyle(
+    fontSize: _fixedFontSize(width * 0.04),
+    fontWeight: FontWeight.w600,
+    fontFamily: ManropeMedium,
+    color: color,
+  );
+
   static TextStyle descriptionText(double width) => TextStyle(
     fontSize: _fixedFontSize(width * 0.025),
     fontWeight: FontWeight.w300,
     fontFamily: Manrope,
     color: AppColors.gray600,
+  );
+  static TextStyle seenNearby(double width) => TextStyle(
+    fontSize: _fixedFontSize(width * 0.055),
+    fontWeight: FontWeight.w700,
+    fontFamily: ManropeBold,
+    color: AppColors.gray800,
   );
 
 }

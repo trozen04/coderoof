@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'utils/app_routes.dart';
-import 'Screens/subscription_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,11 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Manrope',
       ),
-      initialRoute: AppRoutes.subscription,
-      routes: {
-       // AppRoutes.home: (context) => const HomeScreen(),
-        AppRoutes.subscription: (context) => const SubscriptionScreen(),
-      },
+      initialRoute: AppRoutes.home,
+      onGenerateRoute: AppRoutes.generateRoute,
     );
   }
 }
